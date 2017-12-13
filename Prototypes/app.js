@@ -54,31 +54,34 @@ var images = [
 //Then the shuffle function that is created needs to loop through the images array
 //again and render back onto the page in random order.
 
-
 var testDiv = $('#test');
 
-
 /*Working for loop through images array */
-
-   for (var i =0; i < images.length; i++) {
-      var testImage = $('<img class="images">').attr('src', `${images[i].image}`);
-      $(testDiv).append(testImage);
+function loop() {
+      for (var i =0; i < images.length; i++) {
+         var testImage = $('<img class="images">')
+         .attr('src', `${images[i].image}`)
+         .attr('data', `${images[i].name}`);
+         
+         $(testDiv).append(testImage);
+      };
    };
 
-
+loop();
 
 function Shuffle() {
    images.sort(function(a, b) {
       return 0.5 - Math.random()
    });
-   for (var i =0; i < images.length; i++) {
-      var testImage = $('<img class="images">').attr('src', `${images[i].image}`);
-      $(testDiv).append(testImage);
-   };
+   loop();
 };
 
 $("#shuffleButton").on('click', function(){
    $(testDiv).empty();
-   Shuffle($(testImage));
+   Shuffle();
    console.log(images);
 });
+
+// $(document).on('click', '.images', function() {
+//    $(this).data()
+// })
