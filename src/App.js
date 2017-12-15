@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Images from "./"
 import './App.css';
 
 class App extends Component {
@@ -18,4 +18,15 @@ class App extends Component {
   }
 }
 
+class App extends Component {
+  render() {
+    return (
+      <Wrapper>
+        {this.state.}
+
+    )
+  }
+}
+
 export default App;
+
