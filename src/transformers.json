@@ -1,50 +1,62 @@
 [
    {
+      "id": 1,
       "name": "bumblebee",
       "image": "assets/images/bumblebee.jpg"
    },
    {
+      "id": 2,
       "name": "frenzy",
       "image": "assets/images/frenzy.jpg"
    },
    {
+      "id": 3,
       "name": "ironhide",
       "image": "assets/images/ironhide.jpg"
    },
    {
+      "id": 4,
       "name": "jazz",
-     " image": "assets/images/jazz.jpg"
+      "image": "assets/images/jazz.jpg"
    },
    {
+      "id": 5,
       "name": "megatron",
       "image": "assets/images/megatron.jpg"
    },
    {
+      "id": 6,
       "name": "optimus",
       "image": "assets/images/optimus.jpg"
    },
    {
+      "id": 7,
       "name": "prowl",
       "image":  "assets/images/prowl.jpg"
    },
    {
+      "id": 8,
       "name": "ratchett",
       "image":  "assets/images/ratchett.jpg"
    },
    {
+      "id": 9,
       "name": "rumble",
       "image": "assets/images/rumble.jpg"
    },
    {
+      "id": 10,
       "name": "shockwave",
       "image": "assets/images/shockwave.jpg"
    },
    {
+      "id": 11,
       "name": "soundwave",
       "image": "assets/images/soundwave.jpg"
    },
    {
+      "id": 12,
       "name": "starscream",
       "image": "assets/images/starscream.jpg"
    }
-];
+]

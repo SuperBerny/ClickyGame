@@ -1,32 +1,37 @@
-import React, { Component } from 'react';
-import Images from "./"
-import './App.css';
+import React, { Component } from "react";
+import TransformerCard from "./components/TransformerCard";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+import transformers from "./transformers.json";
+import "./App.css";
 
 class App extends Component {
+  state = {
+    transformers
+  };
+
+shuffle() {
+  console.log("hello");
+    transformers.sort(function(a, b) {
+      return 0.5 - Math.random();
+    });
+}
+
+  // Map over this.state.friends and render a TranformerCard component for each friend object
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Wrapper>
+        <Title>Friends List</Title>
+        {this.state.transformers.map(transformer => (
+          <TransformerCard
+            image={transformer.image}
+            key={transformer.id}
+            shuffle={this.shuffle}
+          />
+        ))}
+      </Wrapper>
     );
   }
 }
 
-class App extends Component {
-  render() {
-    return (
-      <Wrapper>
-        {this.state.}
-
-    )
-  }
-}
-
 export default App;
-
